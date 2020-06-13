@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title">Budget App</div>
+    <div id="container1">
+        <div id="error"></div>
+        <div id="budEdit">
+            Enter Your Budget 
+            <input type="text" id="inputBudget">
+            <button id="calculateBtn" onClick="calculateBtn()">Calculate</button>
+        </div>
+
+        <div id="ExpEdit">
+            Enter Your Expense Name 
+            <input type="text" id="inputExpName">
+            Enter Expense Amount
+            <input type="text" id="inputExpAmount">
+            <button id="addExp" onclick="addExpense()">Add Expense</button>
+        </div>
+    </div>
+
+
+    <div id="container2">
+       <div id="showCurrentStatus">
+        <div id="showBudget">
+            Budget<br>
+            <img src="budget.png" id="budgetImage">
+            <div id="currentBudget">Rs. 0 </div>
+        </div>
+        <div id="showExpense">
+            Expense<br>
+            <img src="expense.png" id="expenseImage">
+            <div id="currentExpense">Rs. 0 </div>
+        </div>
+        <div id="showBalance">
+            Balance<br>
+            <img src="balance.png" id="balanceImage">
+            <div id="currentBalance">Rs. 0 </div>
+        </div>
+       </div>
+
+       <div id="expDetails">
+                    <table width="500px" id="data">
+                
+                   </table>
+
+       </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
